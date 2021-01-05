@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 
-
 <html>
   <head>
     <title>Weather App</title>
-    <link rel='icon' href="/web-servers/src/public/pictures/suncloud.jpg ">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/app.js"></script>
+    <link rel="icon" href="/img/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    
   </head>
-
 
   <body>
     <div class="main-content">
-        {{>header}}
-        <p>Hello world! this is the page we should search your weather, do you understand that man</p>
+      {{>header}}
+      <p>Use this site to get your weather!</p>
+
+
+      <form action="">
+        <input placeholder="location"type="text">
+        <button>Search</button>
+      </form>
+      <p id="messageOne"></p>
+      <p id="messageTwo"></p>
+
+
+      <p>the User's Interface was not put into consideration, when building this good app, intentional but not out of malice </p>
+      
     </div>
+    
     {{>footer}}
+
+    <script src="./js/app.js"></script>
   </body>
-</html> 
+</html>
