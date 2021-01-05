@@ -5,6 +5,7 @@ const geocode = require(`./utils/geocode`)
 
 
  const app = express()
+ const port = process.env.PORT || 3000
 
 
  // DEFINE PATHS FOR EXPRESS CONFIG
@@ -94,6 +95,6 @@ app.get(`*`, (req,res) => {
 
 
 // LISTENING TO THE FILE IN THE BROWSER 
-app.listen(3000, () => {
-  console.log('App listening on port 3000!');
+app.listen(port, () => {
+  console.log('App listening on port' + port);
 });
